@@ -342,9 +342,9 @@ about-img svg {
   background: #023e8a;
   border-radius: 100%;
   position: absolute;
-  width: 85px;
-  height: 85px;
-  line-height: 85px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
 }
 .timeline-yr span {
@@ -355,6 +355,21 @@ about-img svg {
   line-height: 85px;
 }
 
+@keyframes enter-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .image-animation {
+    animation: enter-animation 0.8s 1;
+  }
+}
 .timeline-info {
   display: inline-block;
   vertical-align: top;
