@@ -571,115 +571,97 @@ html {
   width: 1px;
 }
 .footer {
-    background: #D0D8DB;
-    padding-top: 60px;
-    padding-bottom: 40px;
+  background-color: #ddd;
+  padding: 80px 16px 16px 16px;
 }
 
-textarea {
-    resize: none;
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
+$social-button-size: 64px;
+$social-button-icon-size: 0.4;
+$social-button-background: #fff;
+$social-button-active-color: #fff;
+$social-button-transition-time: 0.3s;
 
-@charset "UTF-8";
+$social-button-colors: (
+  'mail': #0072c6,
+  'facebook': #3b5999,
+  'linkedin': #0077b5,
+  'github': #6e5494,
+  'codepen': #212121,
+  'steam': #7da10e,
+  'snapchat': #eec900,
+  'twitter': #55acee,
+  'instagram': #e4405f,
+  'npmjs': #c12127,
+);
 
-.svg-inline--fa {
-  vertical-align: -0.200em;
-}
-
-.rounded-social-buttons {
-  text-align: center;
-}
-
-.rounded-social-buttons .social-button {
-  display: inline-block;
+.social-button {
   position: relative;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: $social-button-size;
+  height: $social-button-size;
   text-decoration: none;
+  border-radius: 100%;
+  background: $social-button-background;
   text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
-}
 
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: $social-button-transition-time;
+  }
 
-.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
-  font-size: 25px;
-}
+  &:focus,
+  &:hover {
+    color: $social-button-active-color;
 
-.rounded-social-buttons .social-button.facebook {
-  background: #3b5998;
-}
+    &::after {
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      margin-left: calc(-50% - 1px);
+    }
+  }
 
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
-  color: #3b5998;
-  background: #fefefe;
-  border-color: #3b5998;
-}
+  i,
+  svg {
+    position: relative;
+    z-index: 1;
+    transition: $social-button-transition-time;
+  }
 
-.rounded-social-buttons .social-button.twitter {
-  background: #55acee;
-}
+  i {
+    font-size: $social-button-size * $social-button-icon-size;
+  }
 
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
-  color: #55acee;
-  background: #fefefe;
-  border-color: #55acee;
-}
+  svg {
+    height: percentage($social-button-icon-size);
+    width: percentage($social-button-icon-size);
+  }
 
-.rounded-social-buttons .social-button.linkedin {
-  background: #007bb5;
-}
+  @each $name, $color in $social-button-colors {
+    &--#{$name} {
+      color: $color;
 
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-  color: #007bb5;
-  background: #fefefe;
-  border-color: #007bb5;
+      &::after {
+        background: $color;
+      }
+    }
+  }
 }
-
-.rounded-social-buttons .social-button.youtube {
-  background: #bb0000;
-}
-
-.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
-  color: #bb0000;
-  background: #fefefe;
-  border-color: #bb0000;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #125688;
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
-}
-
 
 }
