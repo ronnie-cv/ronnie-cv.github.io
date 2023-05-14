@@ -289,6 +289,10 @@ b, strong {
   color: #ffffff;
 }
 
+about-img svg {
+  border-radius: 50%;
+}
+
 .dark-mode {
   background: #0c0c0d;
 }
@@ -327,7 +331,7 @@ b, strong {
 }
 .timeline-wrapper:before {
   content: "";
-  background: #474559;
+  background: #023e8a;
   width: 3px;
   height: 100%;
   position: absolute;
@@ -335,12 +339,12 @@ b, strong {
 }
 
 .timeline-yr {
-  background: #474559;
+  background: #023e8a;
   border-radius: 100%;
   position: absolute;
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
+  width: 85px;
+  height: 85px;
+  line-height: 85px;
   text-align: center;
 }
 .timeline-yr span {
@@ -348,7 +352,7 @@ b, strong {
   font-size: 16px;
   font-weight: bold;
   display: block;
-  line-height: 75px;
+  line-height: 85px;
 }
 
 .timeline-info {
@@ -411,12 +415,8 @@ b, strong {
   background: #5b5b5b;
 }
 
-.google-map iframe {
-  width: 100%;
-}
-
 .contact-form {
-  position: relative;
+  position: absolute;
 }
 .contact-form .form-control {
   background: transparent;
@@ -442,13 +442,13 @@ b, strong {
   transition: all 0.4s ease;
 }
 .contact-form .submit-btn:hover {
-  background: #474559;
+  background: #023e8a;
 }
 
 .contact-info {
-  background: #474559;
+  background: #023e8a;
   border-radius: 0 0 3px 3px;
-  position: relative;
+  position: absolute;
   bottom: 8px;
 }
 .contact-info p, .contact-info a {
