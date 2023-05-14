@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+Ronnie is a great person!
