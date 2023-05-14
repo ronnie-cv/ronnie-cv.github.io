@@ -337,24 +337,6 @@ about-img svg {
   position: absolute;
   left: 38px;
 }
-
-.timeline-yr {
-  background: #023e8a;
-  border-radius: 100%;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-}
-.timeline-yr span {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-  display: block;
-  line-height: 85px;
-}
-
 @keyframes enter-animation {
   0% {
     transform: translateY(100px);
@@ -369,6 +351,21 @@ about-img svg {
   .image-animation {
     animation: enter-animation 0.8s 1;
   }
+.timeline-yr {
+  background: #023e8a;
+  border-radius: 100%;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+.timeline-yr span {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  line-height: 80px;
 }
 .timeline-info {
   display: inline-block;
