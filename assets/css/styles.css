@@ -32,7 +32,7 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
-    --normal-font-size: .938rem;
+    --normal-font-size: .830rem;
     --small-font-size: .700rem;
     --smaller-font-size: .75rem;
 
@@ -632,8 +632,8 @@ img{
 
 .qualification__rounder{
     display: inline-block;
-    width: 13px;
-    height: 13px;
+    width: 7px;
+    height: 7px;
     background-color: var(--first-color);
     border-radius: 50%;
 }
