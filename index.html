@@ -162,18 +162,6 @@
                         Looking forward to connecting with you!
                     </p>
 
-                    <p>Translate this page:</p>
-
-<div id="google_translate_element"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
                     <div class="about__info">
                         <div>
                             <span class="about__info-title">03+</span>
@@ -1049,7 +1037,11 @@ function googleTranslateElementInit() {
                     </a>
                 </div>
             </div>
-
+            <div id="google_translate_element"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+                </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
             <p class="footer__copy" style="margin-top: 10px;">&#169; Guglielmo Cerri. All rights reserved.</p>
         </div>
     </footer>
