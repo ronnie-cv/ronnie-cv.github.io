@@ -1315,6 +1315,7 @@ img{
     .footer__copy{
         margin-top: 4.5rem;
     }
+    #google_translate_element {padding: 20px 0px;}
 }
 
 /* For large devices */
