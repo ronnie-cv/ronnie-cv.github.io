@@ -12,7 +12,7 @@
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 30%, 70%);
     --first-color-second: hsl(var(--hue-color), 30%, 90%);
-    --first-color-alt: hsl(var(--hue-color), 77%, 52%);
+    --first-color-alt: hsl(var(--hue-color), 60%, 52%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --first-color: hsl(var(--hue-color), 30%, 70%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
