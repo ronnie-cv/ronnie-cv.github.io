@@ -632,8 +632,8 @@ img{
 
 .qualification__rounder{
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     background-color: var(--first-color);
     border-radius: 50%;
 }
