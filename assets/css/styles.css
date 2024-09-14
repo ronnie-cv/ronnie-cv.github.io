@@ -1262,7 +1262,7 @@ img{
     }
 
     .Expertise__container{
-        grid-template-columns: repeat(3, 238px);
+        grid-template-columns: repeat(1, 238px);
         justify-content: center;
     }
     .Expertise__icon{
@@ -1396,7 +1396,7 @@ img{
     }
 
     .Expertise__container{
-        grid-template-columns: repeat(3, 238px);
+        grid-template-columns: repeat(1, 238px);
     }
 
     .portfolio__content{
