@@ -34,12 +34,12 @@ const skillsHeader = document.querySelectorAll('.skills__header');
 
 function toggleSkills() {
     // Toggle between adding and removing the "skills__open" and "skills__close" class
-    if(this.parentNode.classList.contains('skills__close')){
-        this.parentNode.classList.remove('skills_close');
-        this.parentNode.classList.add('skills__open');
-    } else {
+    if(this.parentNode.classList.contains('skills_open')){
         this.parentNode.classList.remove('skills_open');
         this.parentNode.classList.add('skills__close');
+    } else {
+        this.parentNode.classList.remove('skills_close');
+        this.parentNode.classList.add('skills__open');
     }
 }
 
