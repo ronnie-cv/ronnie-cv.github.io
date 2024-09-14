@@ -1103,7 +1103,8 @@ img{
 
     }
     .home__blob{
-        width: 180px;
+        width: 200px;
+        justify-content:center;
     }
 
     .skills__title{
