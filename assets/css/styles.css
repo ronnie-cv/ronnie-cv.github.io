@@ -1262,7 +1262,7 @@ img{
     }
 
     .Expertise__container{
-        grid-template-columns: repeat(3, 218px);
+        grid-template-columns: repeat(3, 300px);
         justify-content: center;
     }
     .Expertise__icon{
@@ -1389,14 +1389,14 @@ img{
     }
 
     .home__blob{
-        width: 320px;
+        width: 400px;
     }
     .home__social{
         transform: translateX(-6rem);
     }
 
     .Expertise__container{
-        grid-template-columns: repeat(4, 300px);
+        grid-template-columns: repeat(2, 200px);
     }
 
     .portfolio__content{
