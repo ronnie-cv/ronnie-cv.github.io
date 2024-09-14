@@ -1396,7 +1396,7 @@ img{
     }
 
     .Expertise__container{
-        grid-template-columns: repeat(1, 238px);
+        grid-template-columns: repeat(1, 400px);
     }
 
     .portfolio__content{
