@@ -105,7 +105,7 @@ let swiper = new Swiper(".portfolio__container", {
     },
 });
 /*==================== ARTICLES ====================*/
-let swiperarticles = new Swiper(".articles__container", {
+/* let swiperarticles = new Swiper(".articles__container", {
     loop: true,
     grapCursor: true,
     spaceBetween: 40,
