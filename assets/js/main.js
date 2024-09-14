@@ -117,7 +117,7 @@ let swiperarticles = new Swiper(".articles__container", {
     },
     breakpoints: {
       568: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
     },
   });

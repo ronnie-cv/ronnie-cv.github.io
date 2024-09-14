@@ -927,7 +927,6 @@ img{
 
 .card {
     background-color: var(--container-color);
-    width:20px;
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
