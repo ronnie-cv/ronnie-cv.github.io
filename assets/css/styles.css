@@ -499,21 +499,19 @@ img{
 
 .skills__bar,
 
-/*.skills__percentage{
+.skills__percentage{
     height: 5px;
     border-radius: .25rem;
 }
-*/
 
 .skills__bar{
     background-color: var(--first-color-lighter);
 }
 
-/*.skills__percentage{
+.skills__percentage{
     display: block;
     background-color: var(--first-color);
 }
-*/
 
 .skills__python{
     width: 95%;
@@ -587,6 +585,14 @@ img{
 
 .skills__open .skills__arrow{
     transform: rotate(-180deg);
+}
+
+.skills__content {
+    display: none; /* Hidden by default */
+}
+
+.skills__open .skills__content {
+    display: block; /* Show when open */
 }
 
 /*==================== QUALIFICATION ====================*/
