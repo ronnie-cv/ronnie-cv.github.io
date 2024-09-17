@@ -499,19 +499,22 @@ img{
 }
 
 .skills__bar,
-.skills__percentage{
+
+/*.skills__percentage{
     height: 5px;
     border-radius: .25rem;
 }
+*/
 
 .skills__bar{
     background-color: var(--first-color-lighter);
 }
 
-.skills__percentage{
+/*.skills__percentage{
     display: block;
     background-color: var(--first-color);
 }
+*/
 
 .skills__python{
     width: 95%;
