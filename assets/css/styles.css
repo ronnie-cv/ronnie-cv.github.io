@@ -326,7 +326,7 @@ img{
 
 .home__description{
     margin-bottom: var(--mb-2);
-    text-align: justify;
+    text-align: center;
 }
 
 .home__scroll{
