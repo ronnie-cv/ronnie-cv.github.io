@@ -998,7 +998,7 @@ img{
 /*==================== FOOTER ====================*/
 .footer{
     padding-top: 2rem;
-    text-align: center; /* Allinea tutto al centro */
+    text-align: center;
 }
 
 .footer__container{
