@@ -591,7 +591,7 @@ img{
     display: none; /* Hidden by default */
 }
 
-.skills__open .skills__content {
+.skills__content .skills__open {
     display: block; /* Show when open */
 }
 
