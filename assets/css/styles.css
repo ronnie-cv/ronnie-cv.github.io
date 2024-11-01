@@ -994,7 +994,7 @@ img{
 }
 
 .footer__container{
-    row-gap: 5rem;
+    row-gap: 3.5rem;
 }
 
 .footer__bg{
@@ -1315,7 +1315,7 @@ img{
         justify-self: flex-end;
     }
     .footer__copy{
-        margin-top: 4.5rem;
+        margin-top: 3rem;
     }
     #google_translate_element {padding: 20px 0px;}
     /* The switch - the box around the slider */
