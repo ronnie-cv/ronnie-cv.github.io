@@ -850,11 +850,12 @@ img{
 
 .project__description{
     margin-bottom: var(--mb-1-5);
+    color: var(--text-color);
 }
 
 .project__title,
 .project__description{
-    color: var(--text-color);
+    color: white;
 }
 
 .project__img{
