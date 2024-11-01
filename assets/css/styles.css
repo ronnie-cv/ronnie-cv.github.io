@@ -854,7 +854,7 @@ img{
 
 .project__title,
 .project__description{
-    color: #FFF;
+    color: var(--text-color);
 }
 
 .project__img{
