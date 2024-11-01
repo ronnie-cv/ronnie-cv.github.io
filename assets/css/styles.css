@@ -1315,6 +1315,7 @@ img{
         justify-self: flex-end;
     }
     .footer__copy{
+        line-height: 2.8;
         margin-top: 6rem;
     }
     #google_translate_element {padding: 20px 0px;}
