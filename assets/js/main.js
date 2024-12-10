@@ -34,7 +34,7 @@ const skillsHeader = document.querySelectorAll('.skills__header');
 
 function toggleSkills() {
     // Toggle between adding and removing the "skills__open" and "skills__close" class
-    if(this.parentNode.classList.contains('skills__open')){
+    if(this.parentNode.classList.contains('skills__open')) {
         this.parentNode.classList.remove('skills__open');
         this.parentNode.classList.add('skills__close');
     } else {
@@ -43,8 +43,14 @@ function toggleSkills() {
     }
 }
 
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills);
+// Initialize all accordions to be closed when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    skillsHeader.forEach((el) => {
+        const parent = el.parentNode;
+        parent.classList.remove('skills__open');
+        parent.classList.add('skills__close');
+        el.addEventListener('click', toggleSkills);
+    });
 });
 
 /*==================== QUALIFICATION TABS ====================*/
