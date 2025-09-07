@@ -114,13 +114,29 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    margin: 0 0 var(--header-height) 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
+/* Sticky footer layout */
+html, body {
+    height: 100%;
+    margin: 0;
 }
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
 
 h1,h2,h3,h4{
     color: var(--title-color);
@@ -1304,52 +1320,23 @@ img{
         padding-top: .8rem;
     }
 
-    /* Ensure body & html fill the viewport */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-/* Wrap entire page */
-.page-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* full viewport height */
-}
-
-/* Main content grows to push footer down */
-.main-content {
-  flex: 1;
-}
-
-/* Your existing footer styles */
-.footer__container {
-  grid-template-columns: repeat(3, 1fr);
-}
-.footer__bg {
-  padding: 3rem 0 3.5rem;
-}
-.footer__links {
-  flex-direction: row;
-  column-gap: 2rem;
-}
-.footer__socials {
-  justify-self: flex-end;
-}
-.footer__copy {
-  line-height: 2.8;
-  margin-top: 6rem; /* optional: you can reduce if too much space */
-}
-#google_translate_element {
-  padding: 20px 0px;
-}
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
+    .footer__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer__bg{
+        padding: 3rem 0 3.5rem;
+    }
+    .footer__links{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+    .footer__socials{
+        justify-self: flex-end;
+    }
+    .footer__copy{
+        line-height: 2.8;
+        margin-top: 6rem;
+    }
     #google_translate_element {padding: 20px 0px;}
     /* The switch - the box around the slider */
 .switch {
