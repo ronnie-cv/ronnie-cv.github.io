@@ -1490,76 +1490,6 @@ img{
             margin-bottom: 12px;
         }
 
-        .progress-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .progress-bar {
-            flex: 1;
-            height: 6px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 3px;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--first-color), var(--first-color-alt));
-            border-radius: 3px;
-            transition: width 0.5s ease;
-            position: relative;
-        }
-
-        .progress-fill::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            animation: shimmer 2s infinite;
-        }
-
-        @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
-        .progress-text {
-            color: var(--text-color);
-            font-size: var(--smaller-font-size);
-            opacity: 0.7;
-            white-space: nowrap;
-        }
-
-        .goodreads-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(255, 255, 255, 0.1);
-            color: var(--title-color);
-            text-decoration: none;
-            padding: 10px 16px;
-            border-radius: 20px;
-            font-size: var(--small-font-size);
-            font-weight: var(--font-medium);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .goodreads-link:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-            color: var(--title-color);
-        }
-
-        .goodreads-link i {
-            font-size: 0.9rem;
-        }
-
         /* Mobile responsiveness */
         @media screen and (max-width: 768px) {
             .current-read-container {
@@ -1602,3 +1532,7 @@ img{
             background: rgba(0, 0, 0, 0.3);
         }
         </style>
+
+        .current-read-sidebar {
+
+}
