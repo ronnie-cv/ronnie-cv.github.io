@@ -1,3 +1,26 @@
+/* Make the whole page a flex column */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should take all available space */
+main {
+    flex: 1;
+}
+
+/* Footer styles remain the same */
+.footer {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
@@ -990,13 +1013,12 @@ img{
 
 /*==================== FOOTER ====================*/
 .footer{
-    min-height: 50px;
     padding-top: 2rem;
     text-align: center;
 }
 
 .footer__container{
-    row-gap: 5.5rem;
+    row-gap: 3.5rem;
 }
 
 .footer__bg{
@@ -1426,3 +1448,5 @@ img{
     }
     
 }
+
+
