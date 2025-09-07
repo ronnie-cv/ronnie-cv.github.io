@@ -162,6 +162,23 @@ window.addEventListener('scroll', function() {
     }
 });
 
+/*==================== NAV ACTIVE LINK BASED ON PAGE ====================*/
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav__menu a");
+
+  // Get current page filename
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if (linkPage === currentPage) {
+      link.classList.add("active-link");
+    } else {
+      link.classList.remove("active-link");
+    }
+  });
+});
+
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader(){
     const nav = document.getElementById('header');
