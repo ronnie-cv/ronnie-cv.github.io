@@ -1,3 +1,19 @@
+/*==================== STICKY FOOTER SETUP ====================*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
@@ -76,6 +92,25 @@ body.dark-theme{
     --scrollup-color: white;
 }
 
+/*========== Button Dark/Light ==========*/
+.nav__btns{
+    display: flex;
+    align-items: center;
+}
+
+.change-theme{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.change-theme:hover{
+    color: var(--first-color);
+}
+
 /*==================== BASE ====================*/
 *{
     box-sizing: border-box;
@@ -83,28 +118,16 @@ body.dark-theme{
     margin: 0;
 }
 
-html, body{
-    height: 100%;
+html{
     scroll-behavior: smooth;
 }
 
 body{
+    margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
-    margin: 0;
-}
-
-/*==================== FLEX LAYOUT FOR FOOTER ====================*/
-.page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.main-content {
-    flex: 1;
 }
 
 h1,h2,h3,h4{
@@ -167,7 +190,8 @@ img{
 }
 
 /*==================== NAV ====================*/
-.nav{
+.nav
+{
     max-width: 968px;
     height: var(--header-height);
     display: flex;
@@ -243,17 +267,14 @@ img{
     color: var(--first-color-alt);
 }
 
-/* show menu */
 .show-menu{
     bottom: 0;
 }
 
-/* Active link */
 .active-link{
     color: var(--first-color);
 }
 
-/* Change background header */
 .scroll-header{
     box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 }
@@ -313,7 +334,6 @@ img{
 }
 
 .home__scroll{
-    /*display: none;*/
 }
 
 .home__scroll-button{
@@ -482,7 +502,6 @@ img{
 }
 
 .skills__bar,
-
 .skills__percentage{
     height: 5px;
     border-radius: .25rem;
@@ -497,36 +516,6 @@ img{
     background-color: var(--first-color);
 }
 
-.skills__python{width:100%;}
-.skills__java{width:100%;}
-.skills__r{width:100%;}
-.skills__cplusplus{width:100%;}
-.skills__c{width:100%;}
-.skills__docker{width:100%;}
-.skills__kubernetes{width:100%;}
-.skills__git{width:100%;}
-.skills__reactnative{width:100%;}
-.skills__bash{width:100%;}
-.skills__bootstrap{width:100%;}
-.skills__mysql{width:100%;}
-.skills__mongo{width:100%;}
-.skills__postgresql{width:100%;}
-.skills__mssqlserver{width:100%;}
-
-.skills__close .skills__list{
-    height: 0;
-    overflow: hidden;
-}
-
-.skills__open .skills__list{
-    height: max-content;
-    margin-bottom: var(--mb-2-5);
-}
-
-.skills__open .skills__arrow{
-    transform: rotate(-180deg);
-}
-
 /*==================== FOOTER ====================*/
 .footer{
     padding-top: 2rem;
@@ -534,87 +523,33 @@ img{
 }
 
 .footer__container{
-    row-gap: 3.5rem;
-}
-
-.footer__bg{
-    background-color: var(--first-color-second);
-    padding: 2rem 0 3rem;
+    row-gap: 3;
 }
 
 .footer__title{
-    font-size: var(--h2-font-size);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-5);
 }
 
-.footer__subtitle{
-    font-size: var(--small-font-size);
-    margin-bottom: 4rem;
-}
 .footer__links{
     display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-    margin-bottom: 4rem;
+    justify-content: center;
+    margin-bottom: var(--mb-1);
 }
 
-.footer__link:hover{
-    color: var(--first-color-lighter);
+.footer__links a{
+    margin: 0 .5rem;
+    font-size: var(--h3-font-size);
+    color: var(--text-color-light);
 }
 
-.footer__social{
-    font-size: 1.25rem;
-    margin-right: var(--mb-1-5);
-    margin-bottom: 4rem;
-}
-
-.footer__social:hover {
-    color: var(--first-color-lighter);
+.footer__links a:hover{
+    color: var(--first-color);
 }
 
 .footer__copy{
     font-size: var(--smaller-font-size);
-    text-align: center;
     color: var(--text-color-light);
-    margin-top: var(--mb-3);
+    margin-top: var(--mb-1);
 }
-
-.footer__title,
-.footer__subtitle,
-.footer__link,
-.footer__social{
-    color: #FFF;
-}
-
-/*==================== SCROLL UP ====================*/
-.scrollup{
-    position: fixed;
-    right: 1rem;
-    bottom: 5rem;
-    background-color: var(--scrollup-color);
-    opacity: .8;
-    padding: 0 .3rem;
-    border-radius: .4rem;
-    z-index: var(--z-tooltip);
-    transition: .4s;
-}
-
-.scrollup:hover{
-    background-color: var(--first-color-alt);
-}
-
-.scrollup__icon{
-    font-size: 1.5rem;
-    color: #FFF;
-}
-/* Show scroll */
-.show-scroll{
-    bottom: 5rem;
-}
-
-.scrollup--footer{
-    background-color: white; 
-}
-
-/*==================== SCROLLBAR ====================*/
-::-webkit-scrollbar{
-    width: .60rem
