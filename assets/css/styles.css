@@ -104,22 +104,19 @@ body.dark-theme{
 }
 
 /*==================== BASE ====================*/
-html, body {
-    height: 100%;
+html {
+    position: relative;
+    min-height: 100%;
 }
-
-body{
-    display: flex;
-    flex-direction: column;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
-    margin: 0;
+body {
+    margin: 0 0 100px; /* bottom = footer height */
 }
-
-.main {
-    flex: 1;
+#bottom-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 }
 
 *{
