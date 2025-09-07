@@ -990,11 +990,6 @@ img{
 
 /*==================== FOOTER ====================*/
 .footer{
-    position: relative;
-    margin-top: -180px;
-    /* negative value of footer height */
-    height: 180px;
-    clear: both;
     padding-top: 2rem;
     text-align: center;
 }
@@ -1430,5 +1425,4 @@ img{
     }
     
 }
-
 
