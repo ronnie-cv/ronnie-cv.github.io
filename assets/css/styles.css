@@ -990,6 +990,7 @@ img{
 
 /*==================== FOOTER ====================*/
 .footer{
+    min-height: 50px;
     padding-top: 2rem;
     text-align: center;
 }
