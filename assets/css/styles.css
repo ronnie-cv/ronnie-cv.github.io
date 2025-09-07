@@ -1425,3 +1425,21 @@ img{
     }
     
 }
+
+.page-container {
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content grows to take available space */
+.main-content {
+  flex: 1;
+}
+
+/* Footer styling */
+.site-footer {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: center;
+}
