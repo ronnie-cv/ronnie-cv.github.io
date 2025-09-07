@@ -111,8 +111,8 @@ html {
 body {
     margin: 0 0 100px; /* bottom = footer height */
 }
-#bottom-footer {
-    position: absolute;
+.footer {
+    position: fixed;
     left: 0;
     bottom: 0;
     height: 100px;
