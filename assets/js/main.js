@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav__menu a");
 
   // Get current page filename
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const currentPage = window.location.pathname.split("/").pop() || "home.html";
 
   navLinks.forEach(link => {
     const linkPage = link.getAttribute("href");
