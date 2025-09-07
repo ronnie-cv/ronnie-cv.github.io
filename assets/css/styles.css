@@ -1304,23 +1304,52 @@ img{
         padding-top: .8rem;
     }
 
-    .footer__container{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .footer__bg{
-        padding: 3rem 0 3.5rem;
-    }
-    .footer__links{
-        flex-direction: row;
-        column-gap: 2rem;
-    }
-    .footer__socials{
-        justify-self: flex-end;
-    }
-    .footer__copy{
-        line-height: 2.8;
-        margin-top: 6rem;
-    }
+    /* Ensure body & html fill the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Wrap entire page */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+}
+
+/* Main content grows to push footer down */
+.main-content {
+  flex: 1;
+}
+
+/* Your existing footer styles */
+.footer__container {
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer__bg {
+  padding: 3rem 0 3.5rem;
+}
+.footer__links {
+  flex-direction: row;
+  column-gap: 2rem;
+}
+.footer__socials {
+  justify-self: flex-end;
+}
+.footer__copy {
+  line-height: 2.8;
+  margin-top: 6rem; /* optional: you can reduce if too much space */
+}
+#google_translate_element {
+  padding: 20px 0px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
     #google_translate_element {padding: 20px 0px;}
     /* The switch - the box around the slider */
 .switch {
@@ -1424,22 +1453,4 @@ img{
         grid-template-columns: repeat(2, 1fr);
     }
     
-}
-
-.page-container {
-  min-height: 100vh; /* full viewport height */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Main content grows to take available space */
-.main-content {
-  flex: 1;
-}
-
-/* Footer styling */
-.site-footer {
-  background-color: #f2f2f2;
-  padding: 1rem;
-  text-align: center;
 }
