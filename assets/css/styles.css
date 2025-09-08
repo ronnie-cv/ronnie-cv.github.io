@@ -773,9 +773,13 @@ img{
     line-height: 1rem;
 }
 
-.portfolio__container{
+.project__container{
     max-width: 500px;
     margin: 0 auto;
+}
+
+.portfolio__container{
+    width:fit-content;
 }
 
 .portfolio__content{
@@ -843,36 +847,6 @@ img{
 .swiper-button-next,
 .swiper-pagination-bullet{
     outline: none;
-}
-
-/*==================== PROJECT IN MIND ====================*/
-.project{
-    text-align: center;
-}
-
-.project__bg{
-    background-color: var(--first-color-second);
-    padding-top: 3rem;
-}
-
-.project__title{
-    font-size: var(--h2-font-size);
-    margin-bottom: var(--mb-0-75);
-}
-
-.project__description{
-    margin-bottom: var(--mb-1-5);
-    color: var(--text-color);
-}
-
-.project__title,
-.project__description{
-    color: white;
-}
-
-.project__img{
-    width: 150px;
-    justify-self: left;
 }
 
 /*==================== CONTACT ME ====================*/
@@ -1018,8 +992,8 @@ img{
 .footer__title{
     font-size: var(--h2-font-size);
     margin-right: var(--mb-1-5);
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 }
 
 .footer__subtitle{
@@ -1030,6 +1004,7 @@ img{
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
