@@ -110,17 +110,16 @@ body.dark-theme{
     margin: 0;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
+html{
+    scroll-behavior: smooth;
 }
-.site-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main {
-    flex: 1; /* This is the key property */
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
 }
 
 h1,h2,h3,h4{
