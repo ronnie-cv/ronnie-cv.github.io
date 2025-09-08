@@ -327,6 +327,7 @@ img{
 
 .home__description{
     text-align:justify;
+    max-width:60px;
     margin-bottom: var(--mb-2);
 }
 
@@ -1098,11 +1099,11 @@ img{
     }
     
     .home__content{
-        grid-template-columns: .75fr 3fr;
+        grid-template-columns: .25fr 3fr;
 
     }
     .home__blob{
-        width: 500px;
+        width: 200px;
         justify-content:center;
     }
 
@@ -1123,6 +1124,13 @@ img{
     }
     .Expertise__modal{
         padding: 0 .5rem;
+    }
+
+    .proj__container{
+    background-color:transparent;
+    width:700px;
+    text-align:justify;
+    font-size:small;
     }
 
     .project__img{
