@@ -774,7 +774,8 @@ img{
 }
 
 .portfolio__container{
-    width:fit-content;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .portfolio__content{
@@ -1017,6 +1018,7 @@ img{
 .footer__title{
     font-size: var(--h2-font-size);
     margin-right: var(--mb-1-5);
+    margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
