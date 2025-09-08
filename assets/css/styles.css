@@ -988,8 +988,9 @@ img{
 }
 
 .footer__container{
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .footer__bg{
