@@ -999,7 +999,6 @@ img{
 
 .footer__bg{
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     background-color: var(--first-color-second);
