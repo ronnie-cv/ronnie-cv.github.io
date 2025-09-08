@@ -1098,11 +1098,11 @@ img{
     }
     
     .home__content{
-        grid-template-columns: .25fr 3fr;
+        grid-template-columns: .75fr 3fr;
 
     }
     .home__blob{
-        width: 200px;
+        width: 500px;
         justify-content:center;
     }
 
