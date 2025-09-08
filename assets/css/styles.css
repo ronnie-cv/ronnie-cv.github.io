@@ -980,6 +980,8 @@ img{
     position: fixed;
     left: 0;
     bottom: 0;
+    right: 0;
+    width: 100%;
     padding-top: 2rem;
     text-align: center;
 }
@@ -988,6 +990,8 @@ img{
     position: fixed;
     left: 0;
     bottom: 0;
+    right: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -997,6 +1001,8 @@ img{
     position: fixed;
     left: 0;
     bottom: 0;
+    right: 0;
+    width: 100%;
     background-color: var(--first-color-second);
     padding: 2rem 0 3rem;
 }
