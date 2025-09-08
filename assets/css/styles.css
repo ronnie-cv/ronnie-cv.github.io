@@ -112,20 +112,26 @@ body.dark-theme{
 
 html{
     scroll-behavior: smooth;
+    height: 100%; /* make html full height */
 }
 
 body{
-    margin: 0 0 var(--header-height) 0;
+    min-height: 100%; /* ensure body takes full height */
+    display: flex;      /* use flex layout */
+    flex-direction: column; /* stack content vertically */
+    margin: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
 }
 
-footer{
-    position: fixed
-    bottom: 0
+/* The main content should grow to fill space */
+.main {
+    flex: 1;
 }
+
+
 
 h1,h2,h3,h4{
     color: var(--title-color);
