@@ -767,6 +767,12 @@ img{
 }
 
 /*==================== PORTFOLIO ====================*/
+.project__desc{
+    text-align: justify;
+    margin-bottom: var(--mb-2-5);
+
+}
+
 .portfolio__container{
     overflow: initial;
 }
@@ -788,6 +794,9 @@ img{
     margin-bottom: var(--mb-0-5);
 }
 
+.portfolio__sub{
+    align-self: left;
+}
 .portfolio__description{
     margin-bottom: var(--mb-0-75);
 }
