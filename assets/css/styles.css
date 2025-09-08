@@ -769,16 +769,10 @@ img{
 }
 
 /*==================== PORTFOLIO ====================*/
-.project__desc{
-    text-align: center;
-    line-height: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
-}
 
 .proj__container{
     background-color:transparent;
-    width:max-content;
+    width:700px;
     text-align:center;
     line-height: 2;
 }
