@@ -1001,7 +1001,6 @@ img{
     position: fixed;
     left: 0;
     bottom: 0;
-    right: 0;
     width: 100%;
     background-color: var(--first-color-second);
     padding: 2rem 0 3rem;
