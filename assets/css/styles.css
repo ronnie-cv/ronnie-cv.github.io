@@ -982,6 +982,9 @@ img{
 }
 
 .footer__container{
+    position: fixed;
+    left: 0;
+    bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
