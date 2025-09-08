@@ -774,7 +774,7 @@ img{
 }
 
 .portfolio__container{
-    overflow: initial;
+    height:fit-content;
 }
 
 .portfolio__content{
