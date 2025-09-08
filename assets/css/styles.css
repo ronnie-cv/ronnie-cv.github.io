@@ -768,7 +768,7 @@ img{
 
 /*==================== PORTFOLIO ====================*/
 .project__desc{
-    text-align: center;
+    text-align: justify;
     line-height: 100px;
 
 }
