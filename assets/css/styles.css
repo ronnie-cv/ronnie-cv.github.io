@@ -978,9 +978,7 @@ img{
 /*==================== FOOTER ====================*/
 .footer{
     position: fixed;
-    left: 0;
     bottom: 0;
-    right: 0;
     width: 100%;
     padding-top: 2rem;
     text-align: center;
@@ -988,9 +986,7 @@ img{
 
 .footer__container{
     position: fixed;
-    left: 0;
     bottom: 0;
-    right: 0;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
