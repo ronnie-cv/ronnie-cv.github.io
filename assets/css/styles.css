@@ -776,6 +776,13 @@ img{
     margin: 0 auto;
 }
 
+.proj__container{
+    background-color:transparent;
+    margin: auto;
+    width: 450px;
+    text-align:center;
+}
+
 
 .portfolio__container{
     width:fit-content;
