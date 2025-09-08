@@ -326,7 +326,7 @@ img{
 }
 
 .home__description{
-    text-align:left;
+    text-align:justify;
     margin-bottom: var(--mb-2);
 }
 
