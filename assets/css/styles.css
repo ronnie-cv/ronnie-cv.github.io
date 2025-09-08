@@ -110,28 +110,18 @@ body.dark-theme{
     margin: 0;
 }
 
-html{
-    scroll-behavior: smooth;
-    height: 100%; /* make html full height */
-}
-
-body{
-    min-height: 100%; /* ensure body takes full height */
-    display: flex;      /* use flex layout */
-    flex-direction: column; /* stack content vertically */
+html, body {
+    height: 100%;
     margin: 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
 }
-
-/* The main content should grow to fill space */
-.main {
-    flex: 1;
+.site-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
-
+main {
+    flex: 1; /* This is the key property */
+}
 
 h1,h2,h3,h4{
     color: var(--title-color);
@@ -1008,7 +998,6 @@ img{
 }
 
 .footer__container{
-    position: fixed
     row-gap: 3.5rem;
 }
 
