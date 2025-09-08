@@ -773,6 +773,7 @@ img{
 /*==================== PORTFOLIO ====================*/
 
 .proj__container{
+    margin-top: 2px;
     background-color:transparent;
     width:700px;
     text-align:justify;
