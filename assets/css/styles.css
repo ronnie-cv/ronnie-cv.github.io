@@ -770,14 +770,7 @@ img{
 .project__desc{
     text-align: center;
     line-height: 100px;
-    width: fit-content;
 
-}
-
-.about__info{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: var(--mb-2-5);
 }
 
 
