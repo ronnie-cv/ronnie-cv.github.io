@@ -774,7 +774,7 @@ img{
 }
 
 .portfolio__container{
-    height:fit-content;
+    width:fit-content;
 }
 
 .portfolio__content{
@@ -1017,7 +1017,7 @@ img{
 .footer__title{
     font-size: var(--h2-font-size);
     margin-right: var(--mb-1-5);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .footer__subtitle{
