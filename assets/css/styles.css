@@ -326,8 +326,7 @@ img{
 }
 
 .home__description{
-    text-align:justify;
-    max-width:60px;
+    text-align:center;
     margin-bottom: var(--mb-2);
 }
 
