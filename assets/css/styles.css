@@ -770,6 +770,7 @@ img{
 /*==================== PORTFOLIO ====================*/
 .project__desc{
     text-align: center;
+    line-height: 100px;
 
 }
 
