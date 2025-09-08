@@ -979,24 +979,20 @@ img{
 .footer{
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     padding-top: 2rem;
     text-align: center;
 }
 
 .footer__container{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 .footer__bg{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color: var(--first-color-second);
     padding: 2rem 0 3rem;
 }
