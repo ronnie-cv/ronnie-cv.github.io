@@ -311,9 +311,11 @@ img{
     color: var(--first-color-alt);
 }
 
-.home__blob{
-    width: 200px;
-    fill: var(--first-color);
+.home__blob {
+    width: 200px;       /* width and height must be equal */
+    height: 200px;
+    background-color: var(--first-color); /* if not SVG */
+    border-radius: 50%; /* makes it a perfect circle */
 }
 
 .home__blob-img{
