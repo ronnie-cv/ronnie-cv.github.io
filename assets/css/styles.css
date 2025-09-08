@@ -772,12 +772,10 @@ img{
 .project__desc{
     text-align: center;
     line-height: 1rem;
-}
-
-.project__container{
     max-width: 500px;
     margin: 0 auto;
 }
+
 
 .portfolio__container{
     width:fit-content;
