@@ -1008,6 +1008,7 @@ img{
 }
 
 .footer__container{
+    position: fixed
     row-gap: 3.5rem;
 }
 
