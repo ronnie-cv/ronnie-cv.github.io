@@ -1516,6 +1516,20 @@ img{
         height: 300px;
     }
     
+    .portfolio__title {
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-0-75);
+    }
+    
+    .portfolio__description {
+        font-size: var(--normal-font-size);
+        margin-bottom: var(--mb-0-75);
+    }
+    
+    .portfolio__sub {
+        font-size: var(--normal-font-size);
+    }
+    
     .portfolio__content {
         align-items: center;
     }
@@ -1582,6 +1596,10 @@ img{
     }
     
     .home__blob {
+        width: 450px;
+    }
+    
+    .home__blob-img {
         width: 400px;
     }
     
