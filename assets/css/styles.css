@@ -768,10 +768,18 @@ img{
 
 /*==================== PORTFOLIO ====================*/
 .project__desc{
-    text-align: justify;
-    margin-bottom: var(--mb-2-5);
+    text-align: center;
+    width: 50%;
+    margin: auto;
 
 }
+
+.about__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
 
 .portfolio__container{
     overflow: initial;
@@ -783,20 +791,22 @@ img{
 
 .portfolio__img{
     width: 265px;
-    height: 200px; 
+    height: 265px; 
     border-radius: .5rem;
     justify-self: center;
-    object-fit: contain;
+    object-fit:contain;
 }
 
 .portfolio__title{
-    font-size: var(--h3-font-size);
+    font-size: var(--h4-font-size);
     margin-bottom: var(--mb-0-5);
 }
 
 .portfolio__sub{
+    font-style:italic;
     align-self: left;
 }
+
 .portfolio__description{
     margin-bottom: var(--mb-0-75);
 }
