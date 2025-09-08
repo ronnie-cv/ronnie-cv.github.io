@@ -104,25 +104,27 @@ body.dark-theme{
 }
 
 /*==================== BASE ====================*/
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
-    margin: 0 0 100px; /* bottom = footer height */
-}
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-}
-
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+footer{
+    position: fixed
+    bottom: 0
 }
 
 h1,h2,h3,h4{
@@ -1428,4 +1430,3 @@ img{
     }
     
 }
-
