@@ -149,6 +149,7 @@ img{
 
 .section__title{
     font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-3);
 }
 
 .section__subtitle{
@@ -796,7 +797,7 @@ img{
 
 .portfolio__title{
     font-size: var(--h4-font-size);
-    margin-bottom: var(--mb-0-5);
+    margin-bottom: var(--mb-0-7);
 }
 
 .portfolio__sub{
