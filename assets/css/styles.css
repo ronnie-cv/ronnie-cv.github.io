@@ -1318,6 +1318,7 @@ img{
 
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
     }
     .footer__bg{
         padding: 3rem 0 3.5rem;
