@@ -981,8 +981,6 @@ img{
 
 .footer__container{
     grid-template-columns: repeat(2, 1fr);
-    display: flex;
-    flex-direction: column;
     row-gap: 3.5rem;
 }
 
