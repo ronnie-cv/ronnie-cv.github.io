@@ -120,10 +120,6 @@ body{
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
-    padding-bottom: 200px;
-    min-height: 400px;
-    margin-bottom: 100px;
-    clear: both;
 }
 
 h1,h2,h3,h4{
@@ -982,11 +978,13 @@ img{
 /*==================== FOOTER ====================*/
 .footer{
     padding-top: 2rem;
-    padding-bottom: 200px;
     text-align: center;
 }
 
 .footer__container{
+    position: fixed;
+    left: 0;
+    bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -994,12 +992,7 @@ img{
 
 .footer__bg{
     background-color: var(--first-color-second);
-    padding: 1rem 0 1.5rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    padding: 2rem 0 3rem;
 }
 
 .footer__title{
