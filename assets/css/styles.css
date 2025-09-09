@@ -976,72 +976,80 @@ img{
 }
 
 /*==================== FOOTER ====================*/
-.footer{
-    padding-top: 2rem;
-    text-align: center;
+.footer {
+    margin-top: auto; /* This helps push footer to bottom if using flexbox on body */
 }
 
-.footer__container{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.footer__bg{
-    background-color: var(--first-color-second);
-    padding: 2rem 0 3rem;
-}
-
-.footer__title{
-    font-size: var(--h2-font-size);
-    margin-right: var(--mb-1-5);
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-}
-
-.footer__subtitle{
-    font-size: var(--small-font-size);
-    margin-bottom: 4rem;
-}
-.footer__links{
+.footer__container {
+    /* Removed position: fixed and grid layout */
     display: flex;
     flex-direction: column;
-    row-gap: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
 }
 
-.footer__link:hover{
-    color: var(--first-color-lighter);
+.footer__bg {
+    background-color: var(--first-color-second);
+    padding: 2rem 0 1.5rem;
+    width: 100%;
 }
 
-.footer__social{
+.footer__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1rem;
+    color: #FFF;
+}
+
+.footer__subtitle {
+    font-size: var(--small-font-size);
+    margin-bottom: 1.5rem;
+    color: #FFF;
+}
+
+.footer__social-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer__social {
     font-size: 1.25rem;
-    margin-right: var(--mb-1-5);
-    margin-bottom: 4rem;
+    color: #FFF;
+    transition: color 0.3s;
 }
 
 .footer__social:hover {
     color: var(--first-color-lighter);
 }
 
-.footer__copy{
+.footer__copy {
     font-size: var(--smaller-font-size);
     text-align: center;
     color: var(--text-color-light);
-    margin-top: var(--mb-3);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer__title,
-.footer__subtitle,
-.footer__link,
-.footer__social{
-    color: #FFF;
+/* Alternative: Sticky footer approach */
+/* If you want the footer to always stick to the bottom of the viewport, use this instead: */
+/*
+.footer {
+    margin-top: auto;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+*/
 /*========== SCROLL UP ==========*/
 .scrollup{
     position: fixed;
