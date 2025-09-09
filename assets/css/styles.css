@@ -114,12 +114,19 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 h1,h2,h3,h4{
@@ -977,16 +984,16 @@ img{
 
 /*==================== FOOTER ====================*/
 .footer {
-    margin-top: auto; /* This helps push footer to bottom if using flexbox on body */
+    margin-top: auto; /* Pushes footer to bottom */
 }
 
 .footer__container {
-    /* Removed position: fixed and grid layout */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 0 1rem;
+    gap: 1rem;
 }
 
 .footer__bg {
@@ -999,57 +1006,48 @@ img{
     font-size: var(--h2-font-size);
     margin-bottom: 1rem;
     color: #FFF;
+    text-align: center;
 }
 
-.footer__subtitle {
-    font-size: var(--small-font-size);
-    margin-bottom: 1.5rem;
-    color: #FFF;
-}
-
-.footer__social-container {
+.footer__socials {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .footer__social {
     font-size: 1.25rem;
     color: #FFF;
-    transition: color 0.3s;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem;
 }
 
 .footer__social:hover {
     color: var(--first-color-lighter);
+    transform: translateY(-2px);
 }
 
 .footer__copy {
     font-size: var(--smaller-font-size);
     text-align: center;
     color: var(--text-color-light);
-    margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.8;
+    margin: 0;
 }
 
-/* Alternative: Sticky footer approach */
-/* If you want the footer to always stick to the bottom of the viewport, use this instead: */
-/*
-.footer {
-    margin-top: auto;
+.footer__copy a {
+    color: var(--first-color-lighter);
+    text-decoration: none;
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+.footer__copy a:hover {
+    text-decoration: underline;
 }
 
-main {
-    flex: 1;
-}
-*/
 /*========== SCROLL UP ==========*/
 .scrollup{
     position: fixed;
