@@ -1031,6 +1031,12 @@ img{
     color: #FFF;
 }
 
+.footer--homepage {
+    padding-top: 2rem;
+    text-align: center;
+    margin-top: auto;
+}
+
 /*========== SCROLL UP ==========*/
 .scrollup{
     position: fixed;
