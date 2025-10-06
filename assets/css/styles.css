@@ -978,16 +978,11 @@ img{
 /*==================== FOOTER ====================*/
 .footer{
     padding-top: 2rem;
-    text-align: center;
+    text-align: center; /* Allinea tutto al centro */
 }
 
 .footer__container{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    row-gap: 3.5rem;
 }
 
 .footer__bg{
@@ -997,21 +992,16 @@ img{
 
 .footer__title{
     font-size: var(--h2-font-size);
-    margin-right: var(--mb-1-5);
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: var(--mb-0-25);
 }
 
 .footer__subtitle{
     font-size: var(--small-font-size);
-    margin-bottom: 4rem;
 }
 .footer__links{
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
 }
 
 .footer__link:hover{
@@ -1021,7 +1011,6 @@ img{
 .footer__social{
     font-size: 1.25rem;
     margin-right: var(--mb-1-5);
-    margin-bottom: 4rem;
 }
 
 .footer__social:hover {
