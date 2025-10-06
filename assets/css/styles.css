@@ -1044,8 +1044,7 @@ body.homepage,
     flex-direction: column;
 }
 
-body.homepage > main,
-body.homepage > .main-content {
+body.homepage > .main {
     flex: 1;
 }
 
