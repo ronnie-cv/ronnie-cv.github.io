@@ -1628,6 +1628,121 @@ body.homepage > .main {
     }
 }
 
+/* For iPhone 12, 13, 14, 15 (standard sizes: 390px - 430px width) */
+@media screen and (min-width: 376px) and (max-width: 430px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1.25rem;
+    }
+
+    .home__content {
+        grid-template-columns: 0.4fr 2.5fr;
+        padding-top: 3rem;
+        gap: 1rem;
+    }
+
+    .home__blob {
+        width: 220px;
+    }
+
+    .home__title {
+        font-size: 1.75rem;
+    }
+
+    .home__description {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .home__social-icon {
+        font-size: 1.15rem;
+    }
+
+    /* Navigation optimized for notch */
+    .nav {
+        padding: 0 1rem;
+    }
+
+    .nav__menu {
+        padding: 2rem 1rem 4rem;
+    }
+
+    /* Footer optimized for iPhone 13 */
+    .footer__bg {
+        padding: 1.5rem 0 2.25rem;
+    }
+
+    .footer__title {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .footer__social {
+        font-size: 1.25rem;
+        margin-right: 0;
+    }
+
+    .footer__copy {
+        font-size: 0.75rem;
+        margin-top: 1.5rem;
+        line-height: 1.5;
+        padding: 0 1rem;
+    }
+
+    /* Research/Portfolio optimized */
+    .portfolio__img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .portfolio__title {
+        font-size: 1.1rem;
+    }
+
+    .portfolio__description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .section__title {
+        font-size: 1.75rem;
+    }
+
+    .section__subtitle {
+        font-size: 0.85rem;
+    }
+
+    /* Cards optimized */
+    .card {
+        margin: 0.75rem;
+        padding: 1.25rem;
+    }
+
+    /* Expertise section */
+    .Expertise__content {
+        padding: 2.5rem 1rem 1.5rem 1.5rem;
+    }
+
+    .Expertise__title {
+        font-size: 1rem;
+    }
+
+    /* Projects container */
+    .proj__container {
+        width: 100%;
+        padding: 0 1.25rem;
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+}
+
 /* For tablets and iPads in portrait mode */
 @media screen and (min-width: 481px) and (max-width: 767px) {
     .container {
