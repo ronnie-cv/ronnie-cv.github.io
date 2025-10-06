@@ -1696,19 +1696,46 @@ body.homepage > .main {
         padding: 0 1rem;
     }
 
-    /* Research/Portfolio optimized */
+    /* Research/Portfolio optimized - FIXED SIZING */
+    .portfolio__content {
+        padding: 0 1rem;
+    }
+
     .portfolio__img {
-        width: 240px;
-        height: 240px;
+        width: 180px;
+        height: 180px;
     }
 
     .portfolio__title {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .portfolio__sub {
+        font-size: 0.75rem;
     }
 
     .portfolio__description {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         line-height: 1.5;
+        margin-bottom: 0.75rem;
+    }
+
+    .portfolio__button {
+        font-size: 0.8rem;
+    }
+
+    /* Swiper navigation arrows smaller */
+    .swiper-portfolio-icon {
+        font-size: 1.5rem;
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
     }
 
     .section__title {
