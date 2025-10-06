@@ -1037,6 +1037,18 @@ img{
     margin-top: auto;
 }
 
+body.homepage,
+.homepage-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body.homepage > main,
+body.homepage > .main-content {
+    flex: 1;
+}
+
 /*========== SCROLL UP ==========*/
 .scrollup{
     position: fixed;
