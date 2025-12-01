@@ -164,7 +164,7 @@
         </div>
     </footer>
 
-    <!--==================== SCROLL TOP ====================-->
+   <!--==================== SCROLL TOP ====================-->
     <a href="" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scroll__icon"></i>
     </a>
@@ -263,27 +263,11 @@
             }
         }
 
-        /* Tablets */
-        @media screen and (min-width: 481px) and (max-width: 767px) {
-            .blog__container {
-                grid-template-columns: repeat(2, 1fr);
-                max-width: 90%;
-                margin: 0 auto;
-            }
-        }
-
-        /* Medium devices */
-        @media screen and (min-width: 768px) {
-            .blog__container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        /* Large devices */
-        @media screen and (min-width: 1024px) {
-            .blog__container {
-                grid-template-columns: repeat(3, 1fr);
-            }
+        /* All devices - single column layout */
+        .blog__container {
+            grid-template-columns: 1fr;
+            max-width: 768px;
+            margin: 0 auto;
         }
     </style>
 
