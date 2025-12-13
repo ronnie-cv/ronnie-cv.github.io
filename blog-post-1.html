@@ -72,18 +72,148 @@
         </nav>
     </header>
 
-    <!--==================== BLOG ====================-->
-    <section class="blog section" id="blog">
-        <h2 class="section__title">Blog</h2>
-    
-        <div class="blog-post-1__content">
-            <p class="blog_writing">
-                This page will host my thoughts on things I find interesting!
-            </p>
+<!--==================== BLOG POST ====================-->
+<section class="blog-post section" id="blog-post">
+    <div class="blog-post__container container">
+        
+        <!-- Back to Blog Button -->
+        <a href="blog.html" class="blog-post__back">
+            <i class="uil uil-arrow-left"></i> Back to Blog
+        </a>
+
+        <!-- Post Header -->
+        <header class="blog-post__header">
+            <h1 class="blog-post__title">Your Blog Post Title Goes Here</h1>
+            
+            <div class="blog-post__meta">
+                <div class="blog-post__date">
+                    <i class="uil uil-calendar-alt"></i>
+                    <span>December 10, 2024</span>
+                </div>
+                <div class="blog-post__tags">
+                    <span class="post-tag">economics</span>
+                    <span class="post-tag">policy</span>
+                </div>
             </div>
+        </header>
 
+        <!-- Featured Image (optional - delete if not needed) -->
+        <div class="blog-post__featured-image">
+            <img src="assets/img/blog/featured-image.jpg" alt="Blog post featured image">
+        </div>
+
+        <!-- Post Content -->
+        <article class="blog-post__content">
+            
+            <!-- Introduction -->
+            <p class="blog-post__intro">
+                Start with a compelling introduction that hooks your reader. This paragraph should give an overview of what the post is about and why it matters. Make it engaging and set the tone for what's to come.
+            </p>
+
+            <!-- Main Content Sections -->
+            <h2>First Main Section Heading</h2>
+            <p>
+                This is where you start diving into your main content. Break up your thoughts into clear sections with headings. Each paragraph should flow naturally into the next, building your argument or telling your story.
+            </p>
+
+            <p>
+                You can add multiple paragraphs within each section. Keep them focused and readable. Avoid walls of text by breaking things up into digestible chunks.
+            </p>
+
+            <!-- Image in Content (optional) -->
+            <figure class="blog-post__image">
+                <img src="assets/img/blog/content-image-1.jpg" alt="Descriptive alt text">
+                <figcaption>Add a caption to explain what the image shows or why it's relevant.</figcaption>
+            </figure>
+
+            <h2>Second Main Section</h2>
+            <p>
+                Continue building your narrative or argument here. Use concrete examples, data, or personal experiences to support your points.
+            </p>
+
+            <!-- Blockquote (optional - delete if not needed) -->
+            <blockquote class="blog-post__quote">
+                "Include relevant quotes to emphasize key points or add authority to your argument. Make sure to attribute them properly."
+                <cite>— Source Name</cite>
+            </blockquote>
+
+            <h3>Subsection Heading</h3>
+            <p>
+                You can use h3 tags for subsections within your main sections. This helps create a clear hierarchy and makes the content easier to scan.
+            </p>
+
+            <!-- Bullet Points (optional) -->
+            <ul class="blog-post__list">
+                <li>Use bullet points when you have a list of items</li>
+                <li>They help break up text and make information scannable</li>
+                <li>Keep each point concise and focused</li>
+                <li>Don't overuse them - save them for when they truly help</li>
+            </ul>
+
+            <h2>Third Main Section</h2>
+            <p>
+                As you approach the end of your post, start bringing your ideas together. Connect the dots between the different sections you've discussed.
+            </p>
+
+            <!-- Numbered List (optional) -->
+            <ol class="blog-post__list">
+                <li><strong>First key takeaway:</strong> Summarize an important point</li>
+                <li><strong>Second key takeaway:</strong> Another crucial insight</li>
+                <li><strong>Third key takeaway:</strong> Final major point</li>
+            </ol>
+
+            <!-- Another Image (optional) -->
+            <figure class="blog-post__image">
+                <img src="assets/img/blog/content-image-2.jpg" alt="Another descriptive alt text">
+                <figcaption>Another image with its caption.</figcaption>
+            </figure>
+
+            <h2>Conclusion</h2>
+            <p>
+                Wrap up your post with a strong conclusion. Summarize your main points and leave the reader with something to think about. You might also want to include a call to action or suggest next steps.
+            </p>
+
+            <p>
+                End on a note that resonates with your introduction and provides closure to the narrative or argument you've built throughout the post.
+            </p>
+
+        </article>
+
+        <!-- Post Footer -->
+        <footer class="blog-post__footer">
+            <div class="blog-post__share">
+                <h4>Share this post</h4>
+                <div class="blog-post__share-buttons">
+                    <a href="https://twitter.com/intent/tweet?url=https://yoursite.com/blog-post-1.html&text=Your Blog Post Title" target="_blank" class="share-button" aria-label="Share on Twitter">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://yoursite.com/blog-post-1.html&title=Your Blog Post Title" target="_blank" class="share-button" aria-label="Share on LinkedIn">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="mailto:?subject=Your Blog Post Title&body=Check out this post: https://yoursite.com/blog-post-1.html" class="share-button" aria-label="Share via Email">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Related Posts (optional - delete if not needed) -->
+        <aside class="blog-post__related">
+            <h3>Related Posts</h3>
+            <div class="related-posts">
+                <a href="blog-post-2.html" class="related-post">
+                    <h4>Related Post Title 1</h4>
+                    <p>Brief description of the related post...</p>
+                </a>
+                <a href="blog-post-3.html" class="related-post">
+                    <h4>Related Post Title 2</h4>
+                    <p>Brief description of the related post...</p>
+                </a>
+            </div>
+        </aside>
+
+    </div>
 </section>
-
     <!--==================== FOOTER ====================-->
     <footer class="footer" id="footer">
         <div class="footer__bg">

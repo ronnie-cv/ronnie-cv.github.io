@@ -72,25 +72,40 @@
         </nav>
     </header>
 
-    <!--==================== BLOG ====================-->
-    <section class="blog section" id="blog">
-        <h2 class="section__title">Blog</h2>
-        <span class="section__subtitle">Thoughts on economics</span>
+ <!--==================== BLOG ====================-->
+<section class="blog section" id="blog">
+    <h2 class="section__title">Blog</h2>
+    <span class="section__subtitle">Work in progress!</span>
 
-        <div class="blog__container container grid">
+    <div class="blog__container container">
+        
+        <!-- Tag Filter Buttons -->
+        <div class="tag-filters">
+            <button class="tag-btn active" data-tag="all">All Posts</button>
+            <button class="tag-btn" data-tag="economics">Economics</button>
+            <button class="tag-btn" data-tag="policy">Policy</button>
+            <button class="tag-btn" data-tag="research">Research</button>
+            <button class="tag-btn" data-tag="personal">Personal</button>
+        </div>
+
+        <div class="results-count"></div>
+
+        <div class="blog__posts grid">
             <!--==================== BLOG POST 1 ====================-->
-            <article class="blog__card">
+            <article class="blog__card" data-tags="economics,policy">
                 <div class="blog__content">
                     <div class="blog__date">
                         <i class="uil uil-calendar-alt"></i>
-                        <span>Date</span>
+                        <span>December 13, 2025</span>
                     </div>
-                    <h3 class="blog__title">Post Title</h3>
+                    <h3 class="blog__title">Lorem Ipsum</h3>
                     <p class="blog__description">
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc velit, rutrum eleifend suscipit vitae, finibus in sapien. 
-                       Praesent imperdiet odio lacinia sapien vulputate, vitae faucibus ipsum eleifend. Ut laoreet malesuada commodo. 
-                       Quisque enim neque, efficitur ac accumsan ut, molestie sit amet ipsum.
+                        Lorem Ipsum
                     </p>
+                    <div class="post-tags">
+                        <span class="post-tag">economics</span>
+                        <span class="post-tag">policy</span>
+                    </div>
                     <a href="blog-post-1.html" class="button button--flex blog__button">
                         Read More
                         <i class="uil uil-arrow-right button__icon"></i>
@@ -99,18 +114,20 @@
             </article>
 
             <!--==================== BLOG POST 2 ====================-->
-            <article class="blog__card">
+            <article class="blog__card" data-tags="research,economics">
                 <div class="blog__content">
                     <div class="blog__date">
                         <i class="uil uil-calendar-alt"></i>
-                        <span>Date</span>
+                        <span>December 13, 2025</span>
                     </div>
-                    <h3 class="blog__title">Post Title</h3>
+                    <h3 class="blog__title">Lorem Ipsum</h3>
                     <p class="blog__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc velit, rutrum eleifend suscipit vitae, finibus in sapien. 
-                       Praesent imperdiet odio lacinia sapien vulputate, vitae faucibus ipsum eleifend. Ut laoreet malesuada commodo. 
-                       Quisque enim neque, efficitur ac accumsan ut, molestie sit amet ipsum.
+                        Lorem Ipsum
                     </p>
+                    <div class="post-tags">
+                        <span class="post-tag">research</span>
+                        <span class="post-tag">economics</span>
+                    </div>
                     <a href="blog-post-2.html" class="button button--flex blog__button">
                         Read More
                         <i class="uil uil-arrow-right button__icon"></i>
@@ -119,18 +136,19 @@
             </article>
 
             <!--==================== BLOG POST 3 ====================-->
-            <article class="blog__card">
+            <article class="blog__card" data-tags="personal">
                 <div class="blog__content">
                     <div class="blog__date">
                         <i class="uil uil-calendar-alt"></i>
-                        <span>Date</span>
+                        <span>December 13, 2025</span>
                     </div>
-                    <h3 class="blog__title">Post Title</h3>
+                    <h3 class="blog__title">Lorem Ipsum</h3>
                     <p class="blog__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc velit, rutrum eleifend suscipit vitae, finibus in sapien. 
-                       Praesent imperdiet odio lacinia sapien vulputate, vitae faucibus ipsum eleifend. Ut laoreet malesuada commodo. 
-                       Quisque enim neque, efficitur ac accumsan ut, molestie sit amet ipsum.
+                        Lorem Ipsum
                     </p>
+                    <div class="post-tags">
+                        <span class="post-tag">personal</span>
+                    </div>
                     <a href="blog-post-3.html" class="button button--flex blog__button">
                         Read More
                         <i class="uil uil-arrow-right button__icon"></i>
@@ -138,7 +156,8 @@
                 </div>
             </article>
         </div>
-    </section>
+    </div>
+</section>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer" id="footer">
@@ -166,6 +185,56 @@
             <p class="footer__copy" style="margin-top: 10px;">&#169; 2025 Ronnie Volman. Template design adapted from <a href="https://github.com/GuglielmoCerri/GuglielmoCerri.github.io">this GitHub.</a></p>
         </div>
     </footer>
+
+    <!--==================== BLOG FILTER SCRIPT ====================-->
+<script>
+    // Get all filter buttons and posts
+    const filterBtns = document.querySelectorAll('.tag-btn');
+    const posts = document.querySelectorAll('.blog__card');
+    const resultsCount = document.querySelector('.results-count');
+
+    // Function to update results count
+    function updateCount() {
+        const visiblePosts = document.querySelectorAll('.blog__card:not(.hidden)').length;
+        const totalPosts = posts.length;
+        resultsCount.textContent = `Showing ${visiblePosts} of ${totalPosts} posts`;
+    }
+
+    // Filter posts by tag
+    function filterPosts(selectedTag) {
+        posts.forEach(post => {
+            const postTags = post.dataset.tags.split(',');
+            
+            if (selectedTag === 'all' || postTags.includes(selectedTag)) {
+                post.classList.remove('hidden');
+            } else {
+                post.classList.add('hidden');
+            }
+        });
+
+        updateCount();
+    }
+
+    // Add click event to all filter buttons
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            
+            // Add active class to clicked button
+            btn.classList.add('active');
+            
+            // Get selected tag and filter posts
+            const selectedTag = btn.dataset.tag;
+            filterPosts(selectedTag);
+        });
+    });
+
+    // Initialize count on page load
+    if (resultsCount) {
+        updateCount();
+    }
+</script>
 
    <!--==================== SCROLL TOP ====================-->
     <a href="" class="scrollup" id="scroll-up">
