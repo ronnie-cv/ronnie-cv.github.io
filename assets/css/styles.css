@@ -463,30 +463,66 @@ img{
 
 .about__section {
     background-color: var(--container-color);
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,.10);
-    transition: .3s;
-    text-align: center; /* CENTER EVERYTHING */
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .about__section:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about__section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about__section-header:hover {
+    background-color: var(--input-color);
+}
+
+.about__section-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.about__section-icon {
+    color: var(--first-color);
+    font-size: 1.5rem;
 }
 
 .about__section-title {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* CENTER THE TITLE */
-    gap: 0.5rem;
     font-size: var(--h3-font-size);
     color: var(--title-color);
-    margin-bottom: var(--mb-1);
+    margin: 0;
 }
 
-.about__section-title i {
-    color: var(--first-color);
+.about__section-arrow {
     font-size: 1.5rem;
+    color: var(--first-color);
+    transition: transform 0.4s ease;
+}
+
+.about__section-header.open .about__section-arrow {
+    transform: rotate(-180deg);
+}
+
+.about__section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 1.5rem;
+}
+
+.about__section-content.open {
+    max-height: 1000px;
+    padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 /* Currently Reading Styles */
@@ -498,12 +534,12 @@ img{
 .reading__item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* CENTER ITEMS */
+    align-items: center;
     padding: 0.75rem;
     background-color: var(--input-color);
     border-radius: 0.5rem;
     border-left: 3px solid var(--first-color);
-    text-align: center; /* CENTER TEXT */
+    text-align: center;
 }
 
 .reading__title {
@@ -527,7 +563,7 @@ img{
 
 .interest__category {
     padding-bottom: var(--mb-0-75);
-    text-align: center; /* CENTER TEXT */
+    text-align: center;
 }
 
 .interest__category:not(:last-child) {
@@ -548,7 +584,7 @@ img{
     margin: 0;
 }
 
-/* CV Download Section */
+/* CV Request Section */
 .about__cv-section {
     margin-top: var(--mb-2);
     padding-top: var(--mb-2);
@@ -566,12 +602,20 @@ img{
 }
 
 @media screen and (max-width: 567px) {
-    .about__section {
+    .about__section-header {
         padding: 1.25rem;
+    }
+    
+    .about__section-content.open {
+        padding: 0 1.25rem 1.25rem 1.25rem;
     }
     
     .reading__item {
         padding: 0.65rem;
+    }
+
+    .about__section-title {
+        font-size: var(--normal-font-size);
     }
 }
 
