@@ -454,6 +454,122 @@ img{
     justify-content: center;
 }
 
+/*==================== ABOUT EXTRAS ====================*/
+.about__extras {
+    margin-top: var(--mb-2-5);
+    display: grid;
+    gap: var(--mb-2);
+}
+
+.about__section {
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.10);
+    transition: .3s;
+}
+
+.about__section:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,.15);
+}
+
+.about__section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+}
+
+.about__section-title i {
+    color: var(--first-color);
+    font-size: 1.5rem;
+}
+
+/* Currently Reading Styles */
+.about__reading {
+    display: grid;
+    gap: var(--mb-0-75);
+}
+
+.reading__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    background-color: var(--input-color);
+    border-radius: 0.5rem;
+    border-left: 3px solid var(--first-color);
+}
+
+.reading__title {
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.25rem;
+}
+
+.reading__author {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    font-style: italic;
+}
+
+/* Interests Styles */
+.about__interests {
+    display: grid;
+    gap: var(--mb-1);
+}
+
+.interest__category {
+    padding-bottom: var(--mb-0-75);
+}
+
+.interest__category:not(:last-child) {
+    border-bottom: 1px solid var(--first-color-lighter);
+}
+
+.interest__label {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+}
+
+.interest__items {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* CV Download Section */
+.about__cv-section {
+    margin-top: var(--mb-2);
+    padding-top: var(--mb-2);
+    border-top: 2px solid var(--first-color-lighter);
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive */
+@media screen and (min-width: 568px) {
+    .about__extras {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .about__section {
+        padding: 1.25rem;
+    }
+    
+    .reading__item {
+        padding: 0.65rem;
+    }
+}
+
 /*==================== BLOG TAG FILTERS ====================*/
 .tag-filters {
     display: flex;
