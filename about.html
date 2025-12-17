@@ -84,6 +84,20 @@
                     </div>
 
         </section>
+
+        <div class="blog__posts grid">
+
+        <article class="blog__card">
+            <div class="blog__content">
+                <h3 class="blog__title">Current Reads</h3>
+                <ul>
+                    <li>Lonesome Dove</li>
+                    <li>How Democracies Die</li>
+                    <li>Mistborn: The Well of Ascension</li>
+                  </ul>
+        </div>
+        </article>
+    </div>
         <!--==================== QUALIFICATION ====================-->
 
         <section class="qualification section" id="qualifications">
@@ -299,6 +313,102 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
+    <style>
+        .blog__container {
+            gap: 2.5rem;
+            padding-top: 1rem;
+        }
+
+        .blog__card {
+            background-color: var(--container-color);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .blog__card:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog__content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog__date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: var(--small-font-size);
+            color: var(--text-color-light);
+            margin-bottom: var(--mb-1);
+        }
+
+        .blog__date i {
+            font-size: 1rem;
+        }
+
+        .blog__title {
+            font-size: var(--h3-font-size);
+            margin-bottom: var(--mb-1);
+            color: var(--title-color);
+            font-weight: var(--font-semi-bold);
+            line-height: 1.4;
+        }
+
+        .blog__description {
+            margin-bottom: var(--mb-1-5);
+            color: var(--text-color);
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .blog__button {
+            width: max-content;
+            margin-top: auto;
+        }
+
+        /* Small devices */
+        @media screen and (max-width: 480px) {
+            .blog__card {
+                padding: 1.5rem;
+            }
+
+            .blog__title {
+                font-size: var(--normal-font-size);
+            }
+
+            .blog__description {
+                font-size: var(--small-font-size);
+            }
+        }
+
+        /* iPhone 12-15 standard sizes */
+        @media screen and (min-width: 376px) and (max-width: 430px) {
+            .blog__card {
+                padding: 1.75rem;
+            }
+
+            .blog__title {
+                font-size: 1.1rem;
+            }
+
+            .blog__description {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* All devices - single column layout */
+        .blog__container {
+            grid-template-columns: 1fr;
+            max-width: 768px;
+            margin: 0 auto;
+        }
+    </style>
 
 </body>
 
