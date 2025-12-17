@@ -456,11 +456,10 @@ img{
 
 /*==================== ABOUT EXTRAS ====================*/
 .about__extras {
-    margin-top: var(--mb-2-5);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
     gap: 2rem;
-    grid-column: 1 / -1; 
+    margin-top: var(--mb-2-5);
 }
 
 
@@ -492,23 +491,6 @@ img{
 .about__section-title i {
     color: var(--first-color);
     font-size: 1.5rem;
-}
-
-/*==================== FLEX COLUMNS (ABOUT EXTRAS) ====================*/
-.row {
-    display: flex;
-    gap: 2rem;
-}
-
-.column {
-    flex: 1;
-}
-
-/* Stack on mobile */
-@media screen and (max-width: 768px) {
-    .row {
-        flex-direction: column;
-    }
 }
 
 
@@ -567,12 +549,13 @@ img{
     justify-content: center;
 }
 
-/* Responsive */
-@media screen and (max-width: 767px) {
+/* Responsive: Stack columns on tablets and phones */
+@media screen and (max-width: 768px) {
     .about__extras {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; /* Changes to 1 column */
         gap: 1.5rem;
     }
+}
     
     .about__section {
         padding: 1.5rem;
