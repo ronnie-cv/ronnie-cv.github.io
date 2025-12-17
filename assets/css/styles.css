@@ -455,8 +455,10 @@ img{
 }
 
 /*==================== ABOUT EXTRAS ====================*/
+/* Cleaned up layout for the extras section */
 .about__extras {
     display: grid;
+    /* This creates 2 equal columns on desktop */
     grid-template-columns: repeat(2, 1fr); 
     gap: 2rem;
     margin-top: var(--mb-2-5);
@@ -549,6 +551,7 @@ img{
     justify-content: center;
 }
 
+/* Responsive */
 /* Responsive: Stack columns on tablets and phones */
 @media screen and (max-width: 768px) {
     .about__extras {
@@ -564,7 +567,6 @@ img{
     .about__section-title {
         font-size: var(--h3-font-size);
     }
-}
 
 @media screen and (max-width: 480px) {
     .about__section {
