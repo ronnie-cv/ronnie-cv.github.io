@@ -494,6 +494,24 @@ img{
     font-size: 1.5rem;
 }
 
+/*==================== FLEX COLUMNS (ABOUT EXTRAS) ====================*/
+.row {
+    display: flex;
+    gap: 2rem;
+}
+
+.column {
+    flex: 1;
+}
+
+/* Stack on mobile */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
 /* List Items */
 .about__list {
     display: flex;
