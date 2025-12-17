@@ -457,10 +457,12 @@ img{
 /*==================== ABOUT EXTRAS ====================*/
 /* Cleaned up layout for the extras section */
 .about__extras {
-/* This tells the 2 columns to take up all available horizontal space  grid-column: 1 / -1;  */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    display: grid !important; /* Forces grid mode */
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+    gap: 2rem; /* Space between the two columns */
+    grid-column: 1 / -1; /* Makes the section span the full width of the container */
+    margin-top: var(--mb-2-5);
+    align-items: start; /* Keeps columns level even if one is longer */
 }
 
 
