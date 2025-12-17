@@ -1897,6 +1897,15 @@ body.homepage > .main {
         margin-top: 2rem;
     }
 
+    /* sticky footer for blog page */
+    body.homepage {
+        min-height: 100vh;
+    }
+    
+    .footer--blog {
+        margin-top: 2rem;
+    }
+
     /* Footer spacing for small screens */
     .footer__container {
         padding: 0 1rem;
