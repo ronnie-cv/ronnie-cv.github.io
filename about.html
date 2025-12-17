@@ -57,6 +57,7 @@
             </div>
             
             <div class="nav__btns">
+                <div id="google_translate_element" class="nav__translate"></div>
                 <!--Theme change button-->
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
                 <div class="nav__toggle" id="nav-toggle">
@@ -116,7 +117,8 @@
                             </div>
                         </div>
                     </div>
-        
+
+                    <div class="about__extras">
                     <div class="about__section">
                         <h3 class="about__section-title">
                             <i class="uil uil-lightbulb-alt"></i>
@@ -359,6 +361,16 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+          }, 'google_translate_element');
+        }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
