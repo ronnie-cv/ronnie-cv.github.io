@@ -457,12 +457,11 @@ img{
 /*==================== ABOUT EXTRAS ====================*/
 /* Cleaned up layout for the extras section */
 .about__extras {
-    display: grid !important; /* Forces grid mode */
-    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
-    gap: 2rem; /* Space between the two columns */
-    grid-column: 1 / -1; /* Makes the section span the full width of the container */
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+    grid-column: 1 / -1; /* Ensures it spans the full width of the about section */
     margin-top: var(--mb-2-5);
-    align-items: start; /* Keeps columns level even if one is longer */
 }
 
 
@@ -554,10 +553,11 @@ img{
 
 /* Responsive */
 /* Responsive: Stack columns on tablets and phones */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .about__extras {
-        grid-template-columns: 1fr; /* Changes to 1 column */
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr); /* This creates the 2 columns */
+        gap: 2rem;
+        align-items: start;
     }
 }
     
