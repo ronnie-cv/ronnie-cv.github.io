@@ -653,6 +653,7 @@ img{
 
 .blog-post__content p {
     margin-bottom: 1.5rem;
+    color: var(--text-color-dark);
 }
 
 .blog-post__content strong {
