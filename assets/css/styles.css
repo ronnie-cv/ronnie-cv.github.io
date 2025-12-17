@@ -461,9 +461,9 @@ img{
   
   /* ==================== ABOUT EXTRAS ==================== */
   .about__extras {
-    grid-column: 1 / -1;
+    grid-template-columns: 2fr;
     display: grid;
-    gap: 1.75rem;
+    row-gap: 2rem;
   }
   
   /* Two columns on desktop */
