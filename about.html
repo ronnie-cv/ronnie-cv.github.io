@@ -352,33 +352,6 @@
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
 
-    <script>
-        // About section accordion functionality
-        const sectionHeaders = document.querySelectorAll('.about__section-header');
-        
-        sectionHeaders.forEach(header => {
-            header.addEventListener('click', () => {
-                const section = header.dataset.section;
-                const content = document.getElementById(`${section}-content`);
-                
-                // Toggle open class
-                header.classList.toggle('open');
-                content.classList.toggle('open');
-            });
-        });
-        
-        // Optional: Open first section by default
-        document.addEventListener('DOMContentLoaded', () => {
-            const firstHeader = document.querySelector('.about__section-header');
-            const firstContent = document.querySelector('.about__section-content');
-            
-            if (firstHeader && firstContent) {
-                firstHeader.classList.add('open');
-                firstContent.classList.add('open');
-            }
-        });
-        </script>
-
 </body>
 
 </html>
