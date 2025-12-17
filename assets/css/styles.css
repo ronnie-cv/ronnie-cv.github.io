@@ -769,6 +769,7 @@ img{
 
 .blog-post__content p {
     margin-bottom: 1.5rem;
+    color: var(--title-color);
 }
 
 .blog-post__content strong {
@@ -2010,6 +2011,15 @@ body.homepage > .main {
     }
     
     .footer--homepage {
+        margin-top: 2rem;
+    }
+
+    /* sticky footer for blog page */
+    body.homepage {
+        min-height: 100vh;
+    }
+    
+    .footer--blog {
         margin-top: 2rem;
     }
 
