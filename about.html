@@ -71,16 +71,15 @@
 <section class="about section" id="about">
     <h2 class="section__title">About Me</h2>
   
-    <div class="about__container container grid">
+    <div class="about__row">
       <!-- Image -->
-      <img
-        src="assets/img/ronnieconcert.jpg"
-        alt="Ronnie at a concert"
-        class="about__img"
-      />
-  
+      <div class="about__column about__image">
+        <img src="assets/img/ronnieconcert.jpg" >
+      </div>
+
+
       <!-- Bio -->
-      <div class="about__data">
+      <div class="about__column about__bio">
         <p class="about__description">
           Welcome to my site! I'm a student fascinated by the intersections between
           economics and law, and how these fields can work together to address
@@ -91,78 +90,28 @@
         </p>
       </div>
   
-      <!-- Reading + Interests -->
-      <div class="about__content">
-        <!-- Reading -->
-        <div class="about__block">
-          <h3 class="about__title">
-            <i class="uil uil-book-open"></i>
-            Currently Reading
-          </h3>
-  
-          <ul class="about__list">
-            <li class="about__item">
-              <span class="about__icon">📖</span>
-              <div>
-                <span class="about__item-title">Lonesome Dove</span>
-                <span class="about__item-subtitle">Larry McMurtry</span>
-              </div>
-            </li>
-  
-            <li class="about__item">
-              <span class="about__icon">📖</span>
-              <div>
-                <span class="about__item-title">How Democracies Die</span>
-                <span class="about__item-subtitle">
-                  Steven Levitsky & Daniel Ziblatt
-                </span>
-              </div>
-            </li>
-  
-            <li class="about__item">
-              <span class="about__icon">📖</span>
-              <div>
-                <span class="about__item-title">
-                  Mistborn: The Well of Ascension
-                </span>
-                <span class="about__item-subtitle">Brandon Sanderson</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-  
-        <!-- Interests -->
-        <div class="about__block">
-          <h3 class="about__title">
-            <i class="uil uil-lightbulb-alt"></i>
-            Things I’m Into Right Now
-          </h3>
-  
-          <ul class="about__list">
-            <li class="about__item">
-              <span class="about__icon">📚</span>
-              <div>
-                <span class="about__item-title">Academic</span>
-                <span class="about__item-subtitle">
-                  Behavioral economics, social welfare policy, labor markets
-                </span>
-              </div>
-            </li>
-  
-            <li class="about__item">
-              <span class="about__icon">🔍</span>
-              <div>
-                <span class="about__item-title">Personal</span>
-                <span class="about__item-subtitle">
-                  Coffee shops, concerts, amateur photography
-                </span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <!-- Reading & Interests -->
+  <div class="about__row about__content">
+    <!-- Reading -->
+    <div class="about__column about__block">
+      <h3>Currently Reading</h3>
+      <ul>
+        <li>Lonesome Dove – Larry McMurtry</li>
+        <li>How Democracies Die – Steven Levitsky & Daniel Ziblatt</li>
+        <li>Mistborn: The Well of Ascension – Brandon Sanderson</li>
+      </ul>
     </div>
-  </section>  
+
+    <!-- Interests -->
+    <div class="about__column about__block">
+      <h3>Things I’m Into Right Now</h3>
+      <ul>
+        <li>Academic: Behavioral economics, social welfare policy, labor markets</li>
+        <li>Personal: Coffee shops, concerts, amateur photography</li>
+      </ul>
+    </div>
+  </div>
+</section>
   
         <!--==================== QUALIFICATION ====================-->
 
