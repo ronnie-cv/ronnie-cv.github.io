@@ -457,11 +457,10 @@ img{
 /*==================== ABOUT EXTRAS ====================*/
 /* Cleaned up layout for the extras section */
 .about__extras {
+/* This tells the 2 columns to take up all available horizontal space  grid-column: 1 / -1;  */
     display: grid;
-    /* This creates 2 equal columns on desktop */
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-top: var(--mb-2-5);
 }
 
 
