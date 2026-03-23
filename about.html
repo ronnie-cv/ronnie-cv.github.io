@@ -1,28 +1,184 @@
-        <!DOCTYPE html>
-<html lang="en">
+About · HTML
+Copy
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ronnie Volman">
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
     <title>About</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/music.png">
-    <meta name="keywords" content="Economics, Advocacy, Student, Ronnie Volman">
-    <meta name="author" content="Ronnie Volman">
-    <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="6LeG3j4qAAAAAOtcAjaKzfura7epObPoDJpJ30uq" />
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+ 
+    <style>
+        :root {
+            --header-height: 3rem;
+            --hue-color: 267;
+            --first-color: hsl(var(--hue-color), 30%, 70%);
+            --first-color-second: hsl(var(--hue-color), 30%, 90%);
+            --first-color-alt: hsl(var(--hue-color), 50%, 80%);
+            --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+            --text-color: hsl(var(--hue-color), 8%, 45%);
+            --title-color: hsl(var(--hue-color), 8%, 15%);
+            --text-color-light: hsl(var(--hue-color), 30%, 65%);
+            --input-color: hsl(var(--hue-color), 70%, 96%);
+            --body-color: hsl(var(--hue-color), 60%, 99%);
+            --container-color: #FFF;
+            --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+            --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+            --body-font: 'Poppins', sans-serif;
+            --display-font: 'Playfair Display', serif;
+            --h1-font-size: 1.7rem;
+            --h2-font-size: 1.25rem;
+            --h3-font-size: 1.125rem;
+            --normal-font-size: .938rem;
+            --small-font-size: .813rem;
+            --smaller-font-size: .75rem;
+            --font-medium: 500;
+            --font-semi-bold: 600;
+            --z-fixed: 100;
+        }
+        @media screen and (min-width: 968px) {
+            :root {
+                --h1-font-size: 2.25rem; --h2-font-size: 1.5rem;
+                --h3-font-size: 1.25rem; --normal-font-size: 1rem;
+                --small-font-size: .875rem; --smaller-font-size: .813rem;
+            }
+        }
+        body.dark-theme {
+            --first-color-second: hsl(var(--hue-color), 30%, 8%);
+            --title-color: hsl(var(--hue-color), 8%, 95%);
+            --text-color: hsl(var(--hue-color), 8%, 75%);
+            --input-color: hsl(var(--hue-color), 29%, 16%);
+            --body-color: hsl(var(--hue-color), 28%, 12%);
+            --container-color: hsl(var(--hue-color), 29%, 16%);
+            --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+            --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+        }
+        * { box-sizing: border-box; padding: 0; margin: 0; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0 0 var(--header-height) 0; font-family: var(--body-font); font-size: var(--normal-font-size); background-color: var(--body-color); color: var(--text-color); }
+        h1,h2,h3,h4 { color: var(--title-color); font-weight: var(--font-semi-bold); }
+        ul { list-style: none; } a { text-decoration: none; } img { max-width: 100%; height: auto; }
+ 
+        /*==================== HEADER ====================*/
+        .header { width: 100%; position: fixed; bottom: 0; left: 0; z-index: var(--z-fixed); background-color: var(--body-color); }
+        .nav { max-width: 968px; height: var(--header-height); display: flex; justify-content: space-between; align-items: center; margin: 0 auto; padding: 0 1rem; }
+        .nav__logo { color: var(--title-color); font-weight: var(--font-medium); }
+        .nav__logo:hover { color: var(--first-color); }
+        .nav__btns { display: flex; align-items: center; }
+        .change-theme { font-size: 1.25rem; color: var(--title-color); margin-right: 1rem; cursor: pointer; padding: 0 10px; }
+        .change-theme:hover { color: var(--first-color); }
+        .nav__toggle { color: var(--title-color); font-size: 1.1rem; cursor: pointer; }
+        @media screen and (max-width: 767px) {
+            .nav__menu { position: fixed; bottom: -100%; left: 0; width: 100%; background-color: var(--body-color); padding: 2rem 1.5rem 4rem; box-shadow: 0 -1px 4px rgba(0,0,0,.15); border-radius: 1.5rem 1.5rem 0 0; transition: .3s; }
+        }
+        .nav__list { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
+        .nav__link { display: flex; flex-direction: column; align-items: center; font-size: var(--small-font-size); color: var(--title-color); font-weight: var(--font-medium); }
+        .nav__link:hover { color: var(--first-color); }
+        .active-link { color: var(--first-color); }
+        .nav__icon { font-size: 1.2rem; }
+        .nav__close { position: absolute; right: 1.3rem; bottom: .5rem; font-size: 1.5rem; cursor: pointer; color: var(--first-color); }
+        .show-menu { bottom: 0; }
+        @media screen and (min-width: 768px) {
+            body { margin: 0; } .header { top: 0; bottom: initial; } .header, .main { padding: 0 1rem; }
+            .nav { height: calc(var(--header-height) + 1.5rem); }
+            .nav__icon, .nav__close, .nav__toggle { display: none; }
+            .nav__list { display: flex; column-gap: 2rem; } .nav__menu { margin-left: auto; } .change-theme { margin: 0; }
+        }
+ 
+        /*==================== MAIN ====================*/
+        .main { padding-top: calc(var(--header-height) + 2rem); }
+        @media screen and (min-width: 768px) { .main { padding-top: calc(var(--header-height) + 3rem); } }
+        .about-page { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 5rem; }
+ 
+        /*==================== HERO BANNER ====================*/
+        .about-hero { position: relative; width: 100%; height: 340px; border-radius: 1.25rem; overflow: hidden; margin-bottom: 3rem; }
+        .about-hero__img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s ease; }
+        .about-hero:hover .about-hero__img { transform: scale(1.03); }
+        .about-hero__overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(0,0,0,0.55) 100%); }
+        .about-hero__text { position: absolute; bottom: 1.75rem; left: 2rem; right: 2rem; }
+        .about-hero__label { font-size: var(--smaller-font-size); text-transform: uppercase; letter-spacing: .12em; color: rgba(255,255,255,.75); font-weight: var(--font-medium); margin-bottom: .3rem; }
+        .about-hero__caption { font-family: var(--display-font); font-style: italic; font-size: 1.5rem; color: #fff; line-height: 1.3; }
+        .about-hero__placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, var(--first-color-second) 0%, var(--first-color-lighter) 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .75rem; color: var(--first-color); }
+        .about-hero__placeholder i { font-size: 3rem; opacity: .5; }
+        .about-hero__placeholder span { font-size: var(--small-font-size); opacity: .6; }
+ 
+        /*==================== BIO ====================*/
+        .about-intro { display: grid; grid-template-columns: 1fr 180px; gap: 2.5rem; align-items: start; margin-bottom: 2.5rem; }
+        @media screen and (max-width: 600px) { .about-intro { grid-template-columns: 1fr; } .about-intro__portrait { justify-self: center; } }
+        .about-intro__bio h1 { font-family: var(--display-font); font-size: var(--h1-font-size); margin-bottom: .5rem; line-height: 1.2; }
+        .about-intro__role { font-size: var(--small-font-size); color: var(--first-color); font-weight: var(--font-semi-bold); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 1rem; }
+        .about-intro__desc { color: var(--text-color); line-height: 1.85; font-size: var(--normal-font-size); margin-bottom: 1rem; }
+        .about-intro__portrait { width: 180px; height: 220px; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.1); flex-shrink: 0; display: block; }
+        .about-intro__portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+        .about-intro__portrait-placeholder { width: 100%; height: 100%; background: var(--input-color); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-color-light); gap: .5rem; font-size: var(--smaller-font-size); }
+        .about-intro__portrait-placeholder i { font-size: 2rem; color: var(--first-color-lighter); }
+ 
+        /*==================== SECTION LABEL ====================*/
+        .section-label { font-size: var(--smaller-font-size); text-transform: uppercase; letter-spacing: .09em; color: var(--text-color-light); font-weight: var(--font-semi-bold); margin-bottom: 1rem; }
+ 
+        /*==================== CURRENTLY CARDS ====================*/
+        .currently-section { margin-bottom: 2.5rem; }
+        .currently-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+        .currently-card { background: var(--container-color); border-radius: .75rem; padding: 1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+        .currently-card__icon { font-size: 1.4rem; color: var(--first-color); margin-bottom: .5rem; display: block; }
+        .currently-card h3 { font-size: var(--small-font-size); text-transform: uppercase; letter-spacing: .07em; color: var(--text-color-light); margin-bottom: .6rem; font-weight: var(--font-semi-bold); }
+        .currently-card ul { display: flex; flex-direction: column; gap: .35rem; }
+        .currently-card li { font-size: var(--smaller-font-size); color: var(--text-color); line-height: 1.5; }
+        .currently-card li em { color: var(--title-color); font-style: italic; }
+ 
+        /*==================== PHOTO STRIP ====================*/
+        .photo-section { margin-bottom: 2.5rem; }
+        .photo-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; }
+        @media screen and (max-width: 500px) { .photo-strip { grid-template-columns: repeat(2, 1fr); } }
+        .photo-strip__item { position: relative; aspect-ratio: 4/3; border-radius: .75rem; overflow: hidden; cursor: pointer; }
+        .photo-strip__item img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; display: block; }
+        .photo-strip__item:hover img { transform: scale(1.06); }
+        .photo-strip__item-placeholder { width: 100%; background: var(--input-color); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-color-light); gap: .4rem; font-size: var(--smaller-font-size); border: 2px dashed var(--first-color-lighter); border-radius: .75rem; aspect-ratio: 4/3; }
+        .photo-strip__item-placeholder i { font-size: 1.5rem; color: var(--first-color-lighter); }
+        .photo-strip__caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,.55)); color: #fff; padding: .75rem .6rem .5rem; font-size: var(--smaller-font-size); opacity: 0; transition: opacity .3s; font-style: italic; }
+        .photo-strip__item:hover .photo-strip__caption { opacity: 1; }
+ 
+        /*==================== TIMELINE ====================*/
+        .quals-section { margin-bottom: 2.5rem; }
+        .qualification__tabs { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; }
+        .qualification__button { display: flex; align-items: center; gap: .4rem; font-size: var(--small-font-size); color: var(--text-color); font-weight: var(--font-medium); cursor: pointer; padding-bottom: .35rem; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; background: none; border-top: none; border-left: none; border-right: none; font-family: var(--body-font); }
+        .qualification__button.qualification__active { color: var(--first-color); border-bottom-color: var(--first-color); }
+        .qualification__button:hover { color: var(--first-color); }
+        .qualification__icon { font-size: 1.1rem; }
+        .qualification__content { display: none; }
+        .qualification__content.qualification__active { display: block; }
+ 
+        .quals-timeline { position: relative; padding-left: 1.75rem; }
+        .quals-timeline::before { content: ''; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 2px; background: var(--first-color-lighter); }
+        .qual-entry { position: relative; margin-bottom: 1.5rem; }
+        .qual-entry::before { content: ''; position: absolute; left: -1.75rem; top: .3rem; width: 12px; height: 12px; border-radius: 50%; background: var(--first-color); }
+        .qual-entry__title { font-size: var(--normal-font-size); color: var(--title-color); font-weight: var(--font-semi-bold); margin-bottom: .15rem; }
+        .qual-entry__sub { font-size: var(--small-font-size); color: var(--text-color); margin-bottom: .2rem; }
+        .qual-entry__date { font-size: var(--smaller-font-size); color: var(--text-color-light); display: flex; align-items: center; gap: .3rem; }
+        .qual-entry__badge { font-size: var(--smaller-font-size); color: var(--first-color); font-style: italic; display: block; margin-bottom: .2rem; }
+ 
+        /*==================== CV ====================*/
+        .cv-wrap { text-align: center; margin-top: 1rem; }
+        .button { display: inline-flex; align-items: center; gap: .4rem; background-color: var(--first-color); color: #FFF; padding: .75rem 1.5rem; border-radius: .5rem; font-weight: var(--font-medium); font-family: var(--body-font); font-size: var(--small-font-size); transition: background .2s; }
+        .button:hover { background-color: var(--first-color-alt); }
+        .button__icon { font-size: 1.1rem; }
+ 
+        /*==================== SCROLLBAR ====================*/
+        ::-webkit-scrollbar { width: .60rem; background-color: var(--scroll-bar-color); border-radius: .5rem; }
+        ::-webkit-scrollbar-thumb { background-color: var(--scroll-thumb-color); border-radius: .5rem; }
+ 
+        /*==================== FOOTER ====================*/
+        .footer { padding-top: 2rem; text-align: center; }
+        .footer__bg { background-color: var(--first-color-second); padding: 2rem 0 3rem; }
+        .footer__title { font-size: var(--h2-font-size); margin-bottom: .25rem; }
+        .footer__subtitle { font-size: var(--small-font-size); }
+        .footer__copy { font-size: var(--smaller-font-size); text-align: center; color: var(--text-color-light); margin-top: 2rem; }
+        .footer__title, .footer__subtitle, .footer__link, .footer__social { color: #FFF; }
+        .footer__social { font-size: 1.25rem; margin-right: 1.5rem; }
+        .footer__social:hover { color: var(--first-color-lighter); }
+    </style>
 </head>
 
 <body>
@@ -66,23 +222,63 @@
 
         </nav>
     </header>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title"> About Me</h2>
-
+<main class="main">
+        <div class="about-page">
+ 
+            <!-- HERO BANNER -->
+            <!-- To add your photo, replace the placeholder div below with:
+                 <img src="assets/img/your-nature-photo.jpg" alt="Nature" class="about-hero__img">
+                 <div class="about-hero__overlay"></div>
+                 <div class="about-hero__text">
+                     <p class="about-hero__label">Torrey Pines, CA</p>
+                     <p class="about-hero__caption">somewhere worth slowing down</p>
+                 </div>
+            -->
+            <div class="about-hero">
+                <div class="about-hero__placeholder">
+                    <i class="uil uil-camera"></i>
+                    <span>Photo placeholder</span>
+                </div>
+            </div>
+ 
+            <!-- BIO -->
+            <div class="about-intro">
+                <div class="about-intro__bio">
+                    <h1>About Me</h1>
+                    <p class="about-intro__role">Economics · Public Policy · Research</p>
+                    <p class="about-intro__desc">
+                        Welcome to my site! I am interested in the intersection of law, economics and public policy.
+                    </p>
+                    <p class="about-intro__desc">
+                        Outside of school, I enjoy La Jolla's weather, reading, and discovering new music for my playlists.
+                    </p>
+                </div>
+                <!-- To add your portrait, replace the placeholder div below with:
+                     <img src="assets/img/profile.jpg" alt="Your name">
+                -->
             <div class="about__container container grid">
                 <img src="assets/img/ronnieconcert.jpg" alt="" class="about__img">
-
-                <div class="about__data">
-                    <p class="about__description">
-                        Welcome to my site! I'm interested in how economics and law interact to inform policy decisions. Through research, coursework, and community projects, 
-                        I aim to explore different approaches to understanding and addressing public challenges. Outside of academics, I enjoy La Jolla's
-                        weather, reading, and discovering new music for my playlists. Looking forward to connecting!
-                    </p>
+                        <i class="uil uil-user-circle"></i>
+                        <span>Photo</span>
                     </div>
+                </div>
+            </div>
 
-        </section>
+            <!-- PHOTO STRIP -->
+            <!-- To add photos, replace each placeholder div below with:
+                 <div class="photo-strip__item">
+                     <img src="assets/img/nature1.jpg" alt="description">
+                     <span class="photo-strip__caption">Torrey Pines, golden hour</span>
+                 </div>
+            -->
+            <div class="photo-section">
+                <p class="section-label">Through the lens</p>
+                <div class="photo-strip">
+                    <div class="photo-strip__item-placeholder"><i class="uil uil-image-plus"></i><span>Add photo</span></div>
+                    <div class="photo-strip__item-placeholder"><i class="uil uil-image-plus"></i><span>Add photo</span></div>
+                    <div class="photo-strip__item-placeholder"><i class="uil uil-image-plus"></i><span>Add photo</span></div>
+                </div>
+            </div>
         
         <!--====================         <div class="blog__container container">
         <div class="blog__posts grid">
